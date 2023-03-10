@@ -6,7 +6,7 @@ body{
 .bayan{
     max-width: 1440px;
     margin: auto;
-    background-color: blue;
+   
 }
 
 .name{
@@ -36,9 +36,7 @@ input[type="radio"] + span {
     display: block;
     width: 90%;
     height: 80px;
-    background-color: aqua;
     cursor: pointer;
-    border:  3px solid blue;
     overflow: hidden;
     margin: auto;
 }
@@ -47,6 +45,7 @@ input[type="radio"] + span {
 input[type="radio"]:checked + span {
     height: 500px;
 }
+
 
 
 
