@@ -58,14 +58,6 @@ input[type="radio"]:checked + span {
     height: 100%;
 }
 
-input[type="radio"]:hover + span>.memImage {
-    width: 35%;
-}
-
-
-input[type="radio"]:hover + span {
-    height: 100%;
-}
 
 
 input[type="radio"]:checked + span>.firstDiv>.arrow {
@@ -121,6 +113,17 @@ hr{
     .bayan:hover .arrow{
         opacity: 1;
     }
+
+    input[type="radio"]:hover + span>.memImage {
+        width: 35%;
+    }
+    
+    
+    input[type="radio"]:hover + span {
+        height: 100%;
+    }
+    
+
 }
 
 
