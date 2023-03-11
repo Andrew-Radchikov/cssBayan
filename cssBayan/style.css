@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bayan{
+    width: 90%;
+    margin: auto;
+    color: black;
+}
+
+label{
+    display: block;
+    width: 100%;
+}
+
+.name{
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    font-size: 4rem;
+}
+
+input{
+    display: none;
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+    margin: auto;
+} 
+ 
+.arrow{
+    width: 2%;
+    margin-right: 5%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+input[type="radio"] + span {
+    display: block;
+    width: 100%;
+    height: 6em;
+    cursor: pointer;
+    overflow: hidden;
+    margin: auto;
+}
+
+input[type="radio"] + span>.firstDiv>.arrow {
+    transform: rotate(270deg);
+}
+
+input[type="radio"]:checked + span>.memImage {
+    width: 35%;
+}
+
+input[type="radio"]:checked + span {
+    height: 100%;
+}
+
+
+
+input[type="radio"]:checked + span>.firstDiv>.arrow {
+    transform: rotate(180deg);
+}
+
+
+hr{
+    width: 100%;
+    height: 0.05em;
+    margin: 0.5em auto 0.5em auto;
+}
+
+
+.memImage{
+    display: block;
+    width: 5%;
+    margin: auto;
+    margin-bottom: 2%;
+    transition: 1s ease;
+}
+
+.firstDiv{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.memName{
+    margin-left: 5%;
+    font-size: 3.3rem;
+}
+
+
+
+@media (hover: hover) {
+            
+    .bayan{
+        color: blue;
+    }
+
+    .bayan:hover{
+        color: black;
+    }
+
+    .arrow{
+        opacity: 0;
+    }
+
+    .bayan:hover .arrow{
+        opacity: 1;
+    }
+
+    input[type="radio"]:hover + span>.memImage {
+        width: 35%;
+    }
+    
+    
+    input[type="radio"]:hover + span {
+        height: 100%;
+    }
+    
+
+}
+
+
+
+@media (max-width: 821px){
+
+    .bayan{
+        width: 90%;
+        margin: auto;
+        color: black;
+    }
+        
+    .name{
+        font-size: 2rem;
+    }
+
+    .memName{
+        margin-left: 5%;
+        font-size: 1.2rem;
+    }
+
+    input[type="radio"] + span {
+        height: 4em;
+    }
+
+    .firstDiv{
+        height: 3em;
+    }
+
+    input[type="radio"]:hover + span>.memImage {
+        width: 65%;
+    }
+
+
+    input[type="radio"]:checked + span>.memImage {
+        width: 65%;
+    }
+
+    .arrow{
+        width: 4%;
+    }
+    
+}
+
+
+
+@media (max-width: 321px){
+
+    .bayan{
+        width: 90%;
+        margin: auto;
+        color: black;
+    }
+        
+    .name{
+        font-size: 1rem;
+    }
+
+    .memName{
+        font-size: 0.5rem;
+    }
+
+    input[type="radio"] + span {
+        height: 2em;
+    }
+
+    .firstDiv{
+        height: 0.9em;
+    }
+
+    input[type="radio"]:hover + span>.memImage {
+        width: 75%;
+    }
+
+
+    input[type="radio"]:checked + span>.memImage {
+        width: 75%;
+    }
+}
